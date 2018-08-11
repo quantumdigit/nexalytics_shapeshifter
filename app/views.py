@@ -55,10 +55,5 @@ def home(request, bitcoin_address=0, max_tx=50, depth_limit=5, branch_limit=5):
         {
             'title':'Home Page',
             'year':datetime.now().year,
-            'bitcoin_address': bitcoin_address,
-            'graph_json': graph_json,
-            'max_tx': max_tx,
-            'depth_limit': depth_limit,
-            'branch_limit': branch_limit
         }
     )
