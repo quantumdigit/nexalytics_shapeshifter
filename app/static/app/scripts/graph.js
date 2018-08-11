@@ -111,7 +111,6 @@
             }
         }
 
-        d3.selectAll("circle").attr("onclick", clicked);
 
     });
 
