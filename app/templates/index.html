@@ -14,10 +14,17 @@
     {% block content %}
 
 
-<svg width="1200" height="960"></svg>
+<svg width="600" height="960"></svg>
 
 <div id="graph-json" hidden>
     {{graph_json}}
+ <button onclick="goBack()">Go Back</button>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script> 
 </div>
 
     <div id="address" hidden>{{bitcoin_address}}</div>
