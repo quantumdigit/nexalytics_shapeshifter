@@ -111,7 +111,7 @@
             }
         }
         //d3.selectAll("circle").attr("onclick", clicked);
-	circles.on("click", function () {
+	.on("click", function () {
 		alert("clicked");
 		});
 
