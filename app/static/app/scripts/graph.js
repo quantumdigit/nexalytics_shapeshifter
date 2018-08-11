@@ -37,8 +37,9 @@
                     .on("start", dragstarted)
                     .on("drag", dragged)
                     .on("end", dragended))
-		.on("click", function() { 
-			d3.select("circle").attr("onclick", clicked);
+//AGGIUNGERE QUI GLI EVENTI SUI NODI
+		.on("dblclick", function() { 
+			d3.select(this).attr("onclick", clicked);
 					});
 
             node.append("title")
