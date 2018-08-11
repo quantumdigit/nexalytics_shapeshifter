@@ -110,7 +110,8 @@
                 window.open('https://blockchain.info/address/' + title);
             }
         }
-
+	nodes.on("dblclick",function(d){ alert("node was double clicked"); });
+        //d3.selectAll("circle").attr("onclick", clicked);
 
     });
 
