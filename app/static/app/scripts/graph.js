@@ -110,10 +110,7 @@
                 window.open('https://blockchain.info/address/' + title);
             }
         }
-        //d3.selectAll("circle").attr("onclick", clicked);
-	.on("click", function () {
-		alert("clicked");
-		});
+        d3.select("circle").attr("onclick", clicked);
 
     });
 
