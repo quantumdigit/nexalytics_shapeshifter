@@ -37,6 +37,9 @@
                     .on("start", dragstarted)
                     .on("drag", dragged)
                     .on("end", dragended));
+		.on("click", function() { 
+			d3.select("circle").attr("onclick", clicked);
+					});
 
             node.append("title")
                 .text(function (d) { return d.title; });
@@ -110,7 +113,6 @@
                 window.open('https://blockchain.info/address/' + title);
             }
         }
-        d3.select("circle").attr("onclick", clicked);
 
     });
 
