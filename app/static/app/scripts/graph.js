@@ -36,7 +36,7 @@
                 .call(d3.drag()
                     .on("start", dragstarted)
                     .on("drag", dragged)
-                    .on("end", dragended));
+                    .on("end", dragended))
 		.on("click", function() { 
 			d3.select("circle").attr("onclick", clicked);
 					});
