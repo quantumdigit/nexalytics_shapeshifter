@@ -13,23 +13,6 @@
 <body>
     {% block content %}
 
-<div class="jumbotron">
-    <p class="lead">Requested Bitcoin Address: {{bitcoin_address}}</p>
-</div>
-
-
-<p>Bitcoin Address to Load:
-    <input id="request-address" type="text" value="{{bitcoin_address}}"/>
-    Maximum Transactions per Node:
-    <input id="max_tx" type="text" value="{{max_tx}}"/>
-    Maximum Depth Limit:
-    <input id="depth_limit" type="text" value="{{depth_limit}}"/>
-    Maximum Branching per Node:
-    <input id="branch_limit" type="text" value="{{branch_limit}}"/>
-    <button id="load-address" onclick="loadAddress()">Load</button>
-
-</p>
-
 
 <svg width="1200" height="960"></svg>
 
